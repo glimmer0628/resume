@@ -1,0 +1,21 @@
+#enter{
+	background:#fff;
+	border:1px solid red;
+}
+#scroller ul{
+	height:auto;
+}
+#scroller ul li{
+	height:auto;
+	display:flex;
+	flex-flow: column;
+	padding-top:10px;
+	box-sizing: border-box;
+	line-height: 30px;
+	font-size:14px;
+
+}
+#scroller ul li .cg{
+	font-size:20px;
+	font-weight: bold;
+}
