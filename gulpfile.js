@@ -101,6 +101,11 @@ gulp.task('copy-images',function(){
   .pipe(gulp.dest('./www/images'))
 })
 
+gulp.task('copy-font',function(){
+  return gulp.src('./src/font/**/*')
+  .pipe(gulp.dest('./www/font'))
+})
+
 //js模块化管理
 var jsFiles = ['src/scripts/index.js'];
 
@@ -158,18 +163,19 @@ gulp.task('html',function(){
 gulp.task('watch',function(){
   gulp.watch('./src/index.html',['copy-index']);
   gulp.watch('src/images/*',['copy-images']);
+  gulp.watch('src/font/*',['copy-font']);
 
   var queue = sequence(300);
   watch('src/scripts/**/*.js',{
     name:'JS',
     emitOnGlob:false,
-  },queue.getHandler('packjs','verJs','html'));
+  },queue.getHandler('packjs'));
 
 
   watch('src/styles/**/*.*',{
     name:'CSS',
     emitOnGlob:false,
-  },queue.getHandler('sass','verCss','html'));
+  },queue.getHandler('sass'));
 
   
 

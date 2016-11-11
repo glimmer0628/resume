@@ -1,21 +1,289 @@
-#enter{
-	background:#fff;
-	border:1px solid red;
+#header{
+	display: flex;
+        justify-content: space-between;
+        padding:0px 10px;
+background:#20AEE7;
+border-bottom: 1px solid #cccccc;
+height:55px;
+line-height:55px;
+color:#ffffff;
+}
+#header span .iconfont{
+	font-size:22px;
+	
+}
+#header img{
+	height:90%;
+	width:50px;
+	border-radius: 50%;
+
+}
+#footer div{
+	
+color:#333;
+display: flex;
+flex-flow: column;
+}
+#footer div .iconfont{
+	font-size:22px;
+}
+
+
+
+#wrapper{
+	 background: url(../images/bg2.jpg) no-repeat ;
+        background-size: 100% 110%;
 }
 #scroller ul{
 	height:auto;
+	padding-bottom:10px;
+
 }
 #scroller ul li{
 	height:auto;
 	display:flex;
-	flex-flow: column;
+	
 	padding-top:10px;
 	box-sizing: border-box;
-	line-height: 30px;
-	font-size:14px;
+	
+	
+	
+	
 
 }
-#scroller ul li .cg{
-	font-size:20px;
+#scroller_list .skill_li .cg{
+	font-size:22px;
 	font-weight: bold;
+	color:#0386C6;
+
+}
+.skill_sp{
+	color: #38B3E8;
+	font-weight: bold;
+}
+.skill_title{
+	background: transparent;
+color: #000000;
+
+text-align:center;
+position: relative;
+height:110px;
+
+
+
+}
+.skill_title img:nth-of-type(1){
+	width:100px;
+	height:50px;
+	  position: absolute;
+	  left:100px;
+	  top:10px;
+
+
+}
+.skill_title img:nth-of-type(2){
+	width:100px;
+	height:50px;
+	  position: absolute;
+	  left:190px;
+	  top:40px;
+
+}
+.skill_title img:nth-of-type(3){
+	width:110px;
+	height:20px;
+	  position: absolute;
+	  left:80px;
+	  top:70px;
+
+}
+.skill_li{
+
+	margin:0px 10px;
+	 box-sizing: border-box;
+	 background:#fff;
+	 border-bottom: 1px solid #ccc;
+	 line-height: 35px;
+	 flex-flow: row;
+	 font-size:16px;
+}
+.skill_left{
+	float:left;
+	height:120px;
+	width:30%;
+	
+	margin-right:10px;
+}
+.skill_left0{
+	background: url(../images/html5.png) no-repeat -10px 0px;
+        background-size: 120% 150%;
+}
+.skill_left1{
+	background: url(../images/jq.png) no-repeat  ;
+        background-size: 100% 107%;
+}
+.skill_left2{
+	background: url(../images/swiper.jpg) no-repeat  10px 10px;
+        background-size: 80% 80%;
+}
+.skill_left3{
+	background: url(../images/plugin.png) no-repeat 0px 10px ;
+        background-size: 100% 100%;
+}
+.skill_right{
+display:flex;
+	flex-flow: column;
+	float:right;
+	width:70%;
+	line-height:30px;
+}
+.project_li{
+	 box-shadow: 0px 0px 5px #CCCCCC;
+	 line-height: 30px;
+	 padding: 20px;
+	 background:#fff;
+	 font-size:16px;
+	 margin:10px;
+	 flex-flow: column;
+}
+.project_li .cg{
+	text-align:center;
+	 display: block;
+ width: 100%;
+ height: 70px;
+ border-bottom: 1px solid #CCCCCC;
+ 
+ font-size:24px;
+ color:darkorange;
+ font-weight: bold;
+
+}
+.project_li .cg span{
+	font-size:18px;
+ color:#000;
+ font-weight: 500;
+}
+.project_title{
+	background: transparent;
+color: #000000;
+font-size: 30px;
+text-align:center;
+font-weight: bold;
+}
+.project_li img{
+	width:100%;
+	height:150px;
+	margin-bottom: 20px;
+
+}
+.pro_sp{
+	color:darkorange;
+	font-weight: bold;
+}
+.work_li{
+	box-shadow: 0px 0px 5px #CCCCCC;
+	 line-height: 30px;
+	 padding: 20px;
+	 background:#fff;
+	 font-size:16px;
+	 color:#666666;
+	 margin:10px;
+	 flex-flow: column;
+}
+
+
+.work_title{
+	background: transparent;
+color: #000000;
+
+text-align:center;
+position: relative;
+height:110px;
+
+
+
+}
+.work_title img:nth-of-type(1){
+	width:120px;
+	height:60px;
+	  position: absolute;
+	  left:70px;
+	  top:30px;
+
+
+}
+.work_title img:nth-of-type(2){
+	width:120px;
+	height:60px;
+	  position: absolute;
+	  left:185px;
+	  top:20px;
+
+}
+.work_title img:nth-of-type(3){
+	width:110px;
+	height:15px;
+	  position: absolute;
+	  left:80px;
+	  top:10px;
+
+}
+
+.work_li .cg{
+	text-align:center;
+	 display: block;
+ width: 100%;
+ height: 50px;
+
+ font-size:18px;
+  color: #25ACE6;
+ font-weight: bold;
+
+}
+
+.my_li{
+	padding:20px;
+	font-size: 18px;
+	flex-flow: column;
+
+}
+.my_li1{
+	padding:20px;
+	font-size: 18px;
+	flex-flow: column;
+	margin-top:20px;
+}
+.my_li>span{
+	margin-bottom:20px;
+	line-height: 27px;
+	font-weight: 500;
+	color:#666666;
+}
+.my_title{
+	background: transparent;
+color: #02A2EB;
+font-size: 30px;
+text-align:center;
+font-weight: bold;
+
+
+}
+.title_e{
+	background: transparent;
+	text-align:center;
+	font-size: 20px;
+	color: #02A2EB;
+	margin-top:5px;
+}
+.sp_t{
+	color: #02A2EB;
+	font-weight: bold;
+
+}
+.my_img{
+	width:50%;
+
+	margin:50px 150px;
+
+
 }
