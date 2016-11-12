@@ -13,6 +13,8 @@
 	<!-- 模块化打包统一入口 -->
 </head>
 <body>
+	<span id="preload">loading</span>
+
 	<!-- 1:html中的ani的代码
 	2：确保swiper.animate1.0.2.min有接口暴露
 	3：在index.js中引入swiper.animate1.0.2.min
@@ -21,38 +23,38 @@
 	<div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper1">
-            <div><img src="./images/1.jpg" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s" /></div>
+            <div class="page_img"><img src="./images/1.jpg" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s" /></div>
             <h1 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.3s">个人简历</h1>
             <img src="./images/4.png" class="ani img1" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
            		<!-- <h2 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">李慧慧</h2> -->
            		<span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="2s">求职前端开发工程师</span>
-            	<span class="ani sw1" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">给我一个机会 还您一份惊喜</span>
+            	<div class="sw1"><span class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="1s" swiper-animate-delay="2s">给我一个机会 </span><span class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1s" swiper-animate-delay="2s">还您一份惊喜</span></div>
             </div>
        
             <div class="swiper-slide swiper2">
             	<span class="ani" swiper-animate-effect="pulse" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">0 1</span>
            		<div class="ani swiper2_title" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">个人信息</div>
-           		<div  class="ani swiper2_contain" swiper-animate-effect="bounceInUp" swiper-animate-duration="1.5s" swiper-animate-delay="2s">
-           			<span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.6s">李慧慧</span>
-           			<span class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="5s">前端开发工程师</span>
+           		<div  class="ani swiper2_contain" swiper-animate-effect="bounceInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1.8s">
+           			<span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.3s">李慧慧</span>
+           			<span class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="3.8s">前端开发工程师</span>
 
-           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
-           			<span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="6.5s">地址：山东潍坊</span></div>
-           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5.5s"><span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="6.5s">毕业学校：烟台大学</span></div>
-           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5.5s"><span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="6.5s">专业：软件工程</span></div>
-           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="5.5s"><span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="6.5s">工作经验：2年</span></div>
+           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4.3s">
+           			<span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="5.3s">地址：山东潍坊</span></div>
+           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4.3s"><span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="5.3s">毕业学校：烟台大学</span></div>
+           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4.3s"><span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="5.3s">专业：软件工程</span></div>
+           			<div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4.3s"><span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="5.3s">工作经验：2年</span></div>
            		</div>
             </div> 
   
 
             <div class="swiper-slide swiper3">
  			<span class="ani" swiper-animate-effect="pulse" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">0 2</span>
- 			<div class="ani swiper2_title" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">联系方式</div>
- 			<div class="ani " swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">手机：18363829082</div>
- 			<div class="ani " swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">QQ:845055342</div>
- 			<div class="ani " swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">邮箱：845055342@qq.com</div> 
+ 			<div class="ani swiper2_title" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">联系方式</div>
+ 			<div class="ani " swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s">手机：18363829082</div>
+ 			<div class="ani " swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s">QQ:845055342</div>
+ 			<div class="ani " swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s">邮箱：845055342@qq.com</div> 
  			  
-            <button id="enter" class="ani " swiper-animate-effect="bounceInUp" swiper-animate-duration="1.5s" swiper-animate-delay="2.5s">进一步了解</button>
+            <button id="enter" class="ani " swiper-animate-effect="bounceInUp" swiper-animate-duration="1.5s" swiper-animate-delay="2.3s">进一步了解</button>
   
             </div>
              
@@ -82,10 +84,10 @@
 		</div>
  
 		<div id="footer">
-			<div id="skill"><i class="iconfont">&#xe64c;</i>技能</div>
-			<div id="project"><i class="iconfont">&#xe608;</i>作品</div>
-			<div id="work"><i class="iconfont">&#xe655;</i>经历</div>
-			<div id="my"><i class="iconfont">&#xe633;</i>我的</div>
+			<div id="skill"><i class="iconfont">&#xe64c;</i><span>技能</span></div>
+			<div id="project"><i class="iconfont">&#xe608;</i><span>作品</span></div>
+			<div id="work"><i class="iconfont">&#xe655;</i><span>经历</span></div>
+			<div id="my"><i class="iconfont">&#xe633;</i><span>我的</span></div>
 		</div>
  
  
