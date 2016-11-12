@@ -159,3 +159,6 @@ var interval=setInterval(function(){
         $('#preload').show();
     }
 },50);
+
+
+var wx = require('./components/weixin/jweixin');
